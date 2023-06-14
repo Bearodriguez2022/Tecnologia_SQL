@@ -1,0 +1,35 @@
+Desafío Megazord      
+
+La empresa cuyo modelo de datos entidad-relación fue utilizado en la base de datos 
+del M3 del bootcamp, busca ampliar y expandir los productos que ofrece en pos de la 
+captura de nuevos clientes. Dada esta premisa se les plantea el siguiente desafío 
+integrador para trabajar sobre dicha base de datos: 
+Realizar un script en Python que realice las siguientes acciones: 
+  Agregar un nuevo tipo de producto en la tabla correspondiente, denominado 
+refrigeración. 
+  Ingestar dentro de la tabla producto los productos correspondientes a esa 
+categoría, que debe estar referenciada con el correspondiente ID de tipo de 
+producto. Para esto, ya que es un producto de “prueba” que va a ofrecer la 
+compañía, se deberá aplicar una técnica de web scraping (o API) para tomar la 
+información requerida por los campos de dicha tabla, con tres productos de 
+esta categoría: un aire acondicionado split, un refrigerador/heladera, y un 
+ventilador (No hace falta un criterio específico de selección, el que les quede 
+más cómodo), desde su página de e-commerce preferida. 
+El depto de Marketing de la empresa ha decidido realizar una campaña para 
+promocionar estos productos desde este momento, sin necesidad de esperar al 
+verano. Para hacer más eficiente la campaña, se requiere saber la temperatura 
+actual en las localidades donde viven los clientes registrados, y dar prioridad al 
+envío de la publicidad en las zonas más cálidas. Para ello se requiere que consuma 
+alguna API del clima obtenga la temperatura en tiempo real de esa localidad 
+utilizando las coordenadas de la misma, y exporte un CSV para el departamento de 
+Marketing con los siguientes datos: 
+  Nombre y apellido, dirección, localidad, y provincia del cliente, ordenado en 
+relación al criterio de zonas más cálidas prioritario (sólo las localidades 
+donde la temperatura actual supere los 12° C), y pertenencia a rango etario 
+de mayor venta, es decir que la lista tiene que estar ordenada en relación a 
+estos dos criterios. 
+  Si la API en cuestión no puede localizar una localidad, se debe generar un 
+archivo txt, con los datos correspondientes de la localidad, para informar al 
+depto de Marketing. 
+  Realizar un gráfico de barras que muestre la cantidad de clientes por 
+provincia,  dentro  de  la  selección  de  clientes  realizada  en  los  puntos 
